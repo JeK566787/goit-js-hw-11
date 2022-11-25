@@ -72,7 +72,7 @@ async function onLoadMoreSubmit() {
     simpleLightbox.refresh();
     slowScroll();
     if (
-      Math.ceil(searchResult.data.totalHits / pixabayApi.per_page) <
+      Math.ceil(searchResult.data.totalHits / pixabayApi.per_page) ===
       pixabayApi.page
     ) {
       refs.loadMoreBtn.classList.add('is-hidden');

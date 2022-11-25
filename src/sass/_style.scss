@@ -1,0 +1,80 @@
+body {
+  padding-bottom: 50px;
+}
+form {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #2f6ff3;
+}
+
+input,
+button {
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+input {
+  width: 300px;
+
+  &:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 25px #f2f523;
+  }
+}
+
+button {
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #ecff22;
+  cursor: pointer;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.4);
+}
+
+.load-more {
+  display: block;
+  margin: 0 auto;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+.photo-card {
+  width: 350px;
+  overflow: hidden;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+img {
+  width: 100%;
+  height: 250px;
+  display: block;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  border-top: none;
+}
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
